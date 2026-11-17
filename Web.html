@@ -25,45 +25,120 @@
             margin: -20px -20px 15px -20px;
         }
 
+        #side {
+            float: left;
+            background-color: rgb(1, 99, 86);
+            padding: 20px;
+            width: 100px;
+            height: 1000px;
+            margin: -15px -20px;
+        }
 
-        /* 버튼 디자인 */
-        .edit-button { 
+
+        /* 버튼들 디자인 */
+        .edit_button { 
             padding: 6px 12px;
-            background-color: white;
+            background-color: rgb(85, 253, 197);
             border: 1px solid pink;
             border-radius: 4px;
+            width: 100px;
             cursor: pointer;
+            font-weight: bold;
         }
-        .edit-button:hover {
-            background-color: white;
+        .edit_button:hover {
+            background-color: pink;
+            border: 1px solid rgb(85, 253, 197);
+        }
+        .delete_button {
+            padding: 6px 12px;
+            background-color: rgb(85, 253, 197);
+            border: 1px solid pink;
+            border-radius: 4px;
+            width: 100px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .delete_button:hover {
+            background-color: pink;
+            border: 1px solid rgb(85, 253, 197);
+        }
+        .add_button {
+            padding: 6px 12px;
+            background-color: rgb(85, 253, 197);
+            border: 1px solid pink;
+            border-radius: 4px;
+            width: 100px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .add_button:hover {
+            background-color: pink;
+            border: 1px solid rgb(85, 253, 197);
+        }
+        .save_button { 
+            padding: 6px 12px;
+            background-color: rgb(85, 253, 197);
+            border: 1px solid pink;
+            border-radius: 4px;
+            width: 100px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .save_button:hover {
+            background-color: pink;
+            border: 1px solid rgb(85, 253, 197);
         }
 
-        /* 할 일 목록 */
+
+
+        /* 할 일 목록 디자인*/
         #ToDo_Page {
-
+            display: none;
         }
 
-        #ToDo input {
-
+        #ToDo_input {
+            padding: 8px;
+            font-size: 14px;
         }
 
         #ToDo_list {
-            
+            padding-left: 20px;
+            margin-bottom: 10px;
+
+            color: antiquewhite;
         }
 
     </style>
+
 </head>
+
+
 <body>
     <div id="titleA">
         <h1>ToDo</h1>
     </div>
 
+    <div id="side">
+        <button class="edit_button">할 일 추가</button><br>
+        <button class="save_button">저장</button><br>
+        <button class="delete_button">삭제</button><br> 
+    </div>
+
     <div id="ToDo_Page">
         <input type="text" id="ToDo_input" placeholder="할 일을 입력하세요">
-        <button class="edit-button">할 일 추가</button>
-
-        <ul id="ToDo_list"></ul>
+        <button class="add_button">할 일 추가</button>
     </div>
+
+    <div id="ToDo_list">
+        
+    </div>
+
+    
+
+    
+
+    
+    
     
 </body>
 </html>
